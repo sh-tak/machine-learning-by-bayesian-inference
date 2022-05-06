@@ -1,0 +1,270 @@
+/* @theme mytheme */
+@import 'default';
+
+/* 全体のスタイル */
+
+section {
+    /* font-family: 'Times New Roman', 'YuMincho', 'Yu Mincho', sans-serif; */
+    font-family: "Segoe UI", "メイリオ", sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    color: #333333;
+    padding: 80px 100px 80px;
+    justify-content: start;
+}
+
+section p {
+    /* 検討中... 入れたほうが良い？ */
+    text-align:justify;
+}
+
+section p,
+section li,
+section table{
+    font-size: 24px;
+}
+h1 {
+    border-bottom: solid rgb(29, 133, 45) 2px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(29, 133, 45);
+    font-weight: 800;
+}
+
+header,
+footer {
+    left: auto;
+    right: 100px;
+    font-size: 18px;
+}
+
+header {
+    top: 40px;
+}
+
+footer {
+    bottom: 50px;
+}
+
+.katex {
+    margin: 0 0.2em;
+}
+
+.katex-display>.katex{
+    margin: 0;
+}
+
+.katex .text {
+    font-family: 'Times New Roman', 'YuMincho', 'Yu Mincho', sans-serif;
+}
+
+/* 追加要素 */
+section.title {
+    justify-content: center;
+}
+
+section.title {
+    background: rgb(29, 133, 45);
+    /* background: linear-gradient(45deg, rgba(62,179,112,1) 0%, rgba(43,238,126,1) 100%); */
+}
+
+section.title h1,
+section.title h2,
+section.title h3,
+section.title h4,
+section.title p {
+    color: white;
+    margin: 0;
+}
+
+section.title p {
+    font-size: 24px;
+    font-weight: 800;
+    position: fixed;
+    left: 100px;
+    bottom: 80px;
+}
+
+section.section_title {
+    justify-content: center;
+}
+section.section_title h1 {
+        color: rgb(29, 133, 45);
+        font-weight: 800;
+}
+
+section.details h1{
+    color: rgb(29, 133, 45);
+    font-weight: 800;
+    border-bottom: solid;
+    padding-bottom: 10px;
+    margin-bottom: 40px
+}
+
+.card, .card_with_title {
+    border-left:#007b43 solid;
+    border-left-width: 8px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    margin-bottom: 16px;
+    font-size: 24px
+}
+
+.card p:last-child{
+    margin-bottom: 0px;
+}
+
+.card_with_title p:first-child {
+    font-weight: bold;
+}
+
+.card_with_title.bg_green p:first-child {
+    color: #007b43;
+}
+
+.card_formula_bottom {
+    padding: 30px 30px 22px;
+}
+
+.split {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.split p:last-child {
+    margin-bottom: 0px;
+}
+
+.split_l {
+    width: 532px;
+    margin-bottom: 0px;
+}
+
+.split_r {
+    width: 532px;
+    margin-bottom: 0px;
+}
+
+.bg_green {
+    background-color: #d6e9ca;
+}
+
+.bg_gray {
+    background-color: #eeeeee;
+}
+
+.bg_transparent {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* 水平方向の中央揃えは、flexbox使ったものに変更するかも */
+.centering>*,
+.h_center>* {
+    text-align: center;
+    margin: 0 auto 16px;
+}
+
+.centering>img,
+.h_center>* {
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.v_center {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img_center {
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.tips {
+    background-color: rgb(62,179,112);
+    color: white;
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 0 0.4em 0 0.7em;
+    letter-spacing: 0.3em;
+    border-radius: 0.4em;
+    margin-right: 0.5em;
+}
+
+section>ul {
+    padding-left: 0;
+}
+
+section.mokuji a {
+    color: #333333;
+}
+
+section.mokuji li{
+    
+    position: relative;
+    display: block;
+    /* background-color: coral; */
+}
+
+section.mokuji li span{
+    position: absolute;
+    right: 0;
+    /* background-color: red; */
+    display: inline-block;
+    width: 40px;
+    text-align: right;
+}
+
+section.mokuji>ul>li {
+    margin-bottom: 40px;
+    font-size: 30px;
+    /* border-bottom: 1px solid; */
+}
+
+section.mokuji>ul>li li {
+    font-size: 26px;
+    border-bottom: 1px solid;
+}
+ul {
+    padding: 0;
+  }
+  
+section.mokuji ul li, ol li {
+        color: #404040;
+        border-left: solid 6px #007b43;/*左側の線*/
+        border-bottom: solid 2px #dadada;/*下に灰色線*/
+        background: whitesmoke;
+        margin-bottom: 5px;/*下のバーとの余白*/
+        line-height: 1.5;
+        padding: 0.5em;
+        font-size: 24px;
+        list-style-type: none!important;/*ポチ消す*/
+}
+
+section.card ul li, ol li {
+    color: #404040;
+    border-left: solid 6px #007b43;/*左側の線*/
+    border-bottom: solid 2px #dadada;/*下に灰色線*/
+    background: whitesmoke;
+    margin-bottom: 5px;/*下のバーとの余白*/
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none!important;/*ポチ消す*/
+    font-size: 24px;
+}
+
+.shadow1 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.shadow2 {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}

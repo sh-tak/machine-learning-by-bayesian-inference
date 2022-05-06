@@ -6,7 +6,7 @@ class BetaDistribution:
     def __init__(self, a, b):
         self.a = a
         self.b = b
-    def betafunc(self, mu):
+    def _betafunc(self, mu):
         return [gamma(self.a+self.b) / (gamma(self.a) * gamma(self.b)) * (mu**(self.a-1)) * ((1-mu)**(self.b-1))]
     def betafunc_array(self,mu_array):
         return [self.betafunc(mu) for mu in mu_array]
